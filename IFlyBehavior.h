@@ -1,3 +1,6 @@
+#ifndef IFLYBEHAVIOR_H
+#define IFLYBEHAVIOR_H
+
 #include <iostream>
 
 class IFlyBehavior
@@ -37,3 +40,4 @@ public:
     void fly() override { std::cout << "WHOOOOOOSH!\n"; }
 };
 
+#endif

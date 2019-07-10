@@ -1,3 +1,6 @@
+#ifndef DUCK_H
+#define DUCK_H
+
 #include "IFlyBehavior.h"
 #include "IQuackBehavior.h"
 
@@ -66,3 +69,4 @@ public:
     void display() override { std::cout << "I look like a model duck!\n"; }
 };
 
+#endif

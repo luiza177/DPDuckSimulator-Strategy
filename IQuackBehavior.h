@@ -1,3 +1,6 @@
+#ifndef IQUACKBEHAVIOR_H
+#define IQUACKBEHAVIOR_H
+
 #include <iostream>
 
 class IQuackBehavior
@@ -36,3 +39,5 @@ public:
 
     void quacking() override { std::cout << "...\n"; }
 };
+
+#endif
