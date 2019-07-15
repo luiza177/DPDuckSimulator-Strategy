@@ -1,8 +1,8 @@
 #ifndef IFLYBEHAVIOR_H
 #define IFLYBEHAVIOR_H
-
 #include <iostream>
 
+//////////////////INTERFACE///////////////////////
 class IFlyBehavior
 {
 public:
@@ -12,7 +12,7 @@ public:
     virtual void fly() = 0;
 };
 
-
+////////////////IMPLEMENTATIONS///////////////////
 class FlyWithWings : public IFlyBehavior
 {
 public:

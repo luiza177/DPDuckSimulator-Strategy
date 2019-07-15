@@ -1,8 +1,5 @@
 #include "Duck.h"
 
-// TODO: Reorganize  .h and files
-// TODO: re-work with smart pointers
-
 int main(int argc, char const *argv[])
 {
     Duck* mallard = new MallardDuck();

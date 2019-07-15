@@ -1,9 +1,10 @@
 #ifndef DUCK_H
 #define DUCK_H
-
+#include <memory>
 #include "IFlyBehavior.h"
 #include "IQuackBehavior.h"
 
+/////////////////BASE ABSTRACT/////////////////
 class Duck
 {
 public:
@@ -23,14 +24,12 @@ public:
     }
     void setFlyBehavior(IFlyBehavior* fb) 
     {
-        if (m_FlyBehavior != nullptr)
-            delete m_FlyBehavior;
+        if (m_FlyBehavior != nullptr) delete m_FlyBehavior; //
         m_FlyBehavior = fb;
     }
     void setQuackBehavior(IQuackBehavior* qb)
     {
-        if (m_QuackBehavior != nullptr)
-            delete m_QuackBehavior;
+        if (m_QuackBehavior != nullptr) delete m_QuackBehavior; //
         m_QuackBehavior = qb;
     }
 
@@ -41,7 +40,7 @@ protected:
 };
 
 
-
+///////////////// CONCRETES ///////////////////
 class MallardDuck : public Duck
 {
 public:
@@ -57,8 +56,6 @@ public:
 
 class ModelDuck : public Duck
 {
-private:
-    
 public:
     ModelDuck()
     {

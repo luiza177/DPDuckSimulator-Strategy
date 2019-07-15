@@ -1,8 +1,8 @@
 #ifndef IQUACKBEHAVIOR_H
 #define IQUACKBEHAVIOR_H
-
 #include <iostream>
 
+///////////////INTERFACE////////////////////
 class IQuackBehavior
 {
 public:
@@ -12,6 +12,8 @@ public:
     virtual void quacking() = 0;
 };
 
+
+///////////////IMPLEMENTATIONS////////////////////
 
 class Quack : public IQuackBehavior
 {
